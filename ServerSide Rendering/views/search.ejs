@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if (search) { %>
+        <h1>Search Results for "<%= search  %>"</h1>
+    <% } else { %>
+        <h1>All URLs</h1>
+    <% } %>
+    <form method="GET" action="/search">
+        <input type="text" name="search" placeholder="Search by URL">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
+asda
